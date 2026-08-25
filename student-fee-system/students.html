@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Fee Management System</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+    <div class="row">
+
+        <!-- Sidebar -->
+        <div class="col-lg-2">
+
+            <div class="sidebar">
+
+                <div class="text-center py-4">
+                    <i class="bi bi-mortarboard-fill logo-icon"></i>
+
+                    <h5 class="text-white mt-2">
+                        Student Fee<br>Management System
+                    </h5>
+                </div>
+
+                <a href="admin-dashboard.html" class="menu-item">
+    <i class="bi bi-speedometer2"></i> Dashboard
+</a>
+
+<a href="students.html" class="menu-item active">
+    <i class="bi bi-people-fill"></i> Students
+</a>
+
+<a href="fee-payment.html" class="menu-item">
+    <i class="bi bi-credit-card-fill"></i> Fee Payment
+</a>
+
+<a href="receipts.html" class="menu-item">
+    <i class="bi bi-receipt"></i> Receipts
+</a>
+
+<a href="reports.html" class="menu-item">
+    <i class="bi bi-bar-chart-fill"></i> Reports
+</a>
+
+<a href="#" class="menu-item">
+    <i class="bi bi-box-arrow-right"></i> Logout
+</a>
+
+            </div>
+
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-lg-10">
+
+            <div class="p-4">
+
+                <div class="topbar">
+
+                    <h3>Student Management</h3>
+
+                    <div class="admin-info">
+                        <i class="bi bi-person-circle"></i>
+                        <span>Admin</span>
+                    </div>
+
+                </div>
+
+                <p class="text-muted">
+                    Manage student records by adding, editing, deleting and searching students.
+                </p>
+
+                <!-- Action Bar -->
+                <div class="d-flex justify-content-between align-items-center my-4">
+
+                    <button class="btn btn-login">
+                        <i class="bi bi-plus-circle"></i> Add Student
+                    </button>
+
+                    <input
+                        type="text"
+                        class="form-control w-25"
+                        placeholder="Search Student">
+
+                </div>
+
+                <!-- Student Table -->
+                <div class="table-responsive">
+
+                    <table class="table table-bordered table-hover align-middle">
+
+                        <thead style="background-color:#104439; color:white;">
+
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Department</th>
+                                <th>Semester</th>
+                                <th>Phone</th>
+                                <th>Action</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>101</td>
+                                <td>Maimuna</td>
+                                <td>CSE</td>
+                                <td>3rd</td>
+                                <td>01712345678</td>
+
+                                <td>
+
+                                    <button class="btn btn-sm btn-warning">
+                                        <i class="bi bi-pencil-square"></i> Edit
+                                    </button>
+
+                                    <button class="btn btn-sm btn-danger">
+                                        <i class="bi bi-trash"></i> Delete
+                                    </button>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+
+                                <td>102</td>
+                                <td>Priya</td>
+                                <td>CSE</td>
+                                <td>4th</td>
+                                <td>01712345678</td>
+
+                                <td>
+
+                                    <button class="btn btn-sm btn-warning">
+                                        <i class="bi bi-pencil-square"></i> Edit
+                                    </button>
+
+                                    <button class="btn btn-sm btn-danger">
+                                        <i class="bi bi-trash"></i> Delete
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>103</td>
+                                <td>Sumayyah</td>
+                                <td>EEE</td>
+                                <td>2nd</td>
+                                <td>01812345678</td>
+
+                                <td>
+
+                                    <button class="btn btn-sm btn-warning">
+                                        <i class="bi bi-pencil-square"></i> Edit
+                                    </button>
+
+                                    <button class="btn btn-sm btn-danger">
+                                        <i class="bi bi-trash"></i> Delete
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

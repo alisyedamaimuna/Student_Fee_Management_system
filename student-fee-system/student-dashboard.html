@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Fee Management System</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+    <div class="row">
+
+        <!-- Sidebar -->
+        <div class="col-lg-2">
+
+            <div class="sidebar">
+
+                <div class="text-center py-4">
+                    <i class="bi bi-mortarboard-fill logo-icon"></i>
+
+                    <h5 class="text-white mt-2">
+                        Student Fee<br>Management System
+                    </h5>
+                </div>
+
+                <a href="student-dashboard.html" class="menu-item active">
+                    <i class="bi bi-speedometer2"></i> Dashboard
+                </a>
+
+                <a href="student-receipts.html" class="menu-item">
+                    <i class="bi bi-receipt"></i> My Receipts
+                </a>
+
+                <a href="#" class="menu-item">
+                    <i class="bi bi-box-arrow-right"></i> Logout
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-lg-10">
+
+            <div class="p-4">
+
+                <div class="topbar">
+
+                    <h3>Student Dashboard</h3>
+
+                    <div class="admin-info">
+                        <i class="bi bi-person-circle"></i>
+                        <span>Maimuna</span>
+                    </div>
+
+                </div>
+
+                <p class="text-muted">
+                    Welcome! View your fee status and payment history.
+                </p>
+
+                <!-- Dashboard Cards -->
+                <div class="row mt-4">
+
+                    <div class="col-lg-4 mb-4">
+                        <div class="dashboard-card">
+                            <h5>Fees Paid</h5>
+                            <h2>৳15,000</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4">
+                        <div class="dashboard-card">
+                            <h5>Pending Fees</h5>
+                            <h2>৳5,000</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4">
+                        <div class="dashboard-card">
+                            <h5>Receipts</h5>
+                            <h2>3</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Student Information -->
+                <div class="card mt-4">
+
+                    <div class="card-body">
+
+                        <h4 class="mb-4">Student Information</h4>
+
+                        <table class="table table-bordered">
+
+                            <tr>
+                                <th>Student ID</th>
+                                <td>101</td>
+                            </tr>
+
+                            <tr>
+                                <th>Name</th>
+                                <td>Maimuna</td>
+                            </tr>
+
+                            <tr>
+                                <th>Department</th>
+                                <td>CSE</td>
+                            </tr>
+
+                            <tr>
+                                <th>Semester</th>
+                                <td>3rd</td>
+                            </tr>
+
+                            <tr>
+                                <th>Phone</th>
+                                <td>01712345678</td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+                <!-- Recent Receipts -->
+                <div class="card mt-4">
+
+                    <div class="card-body">
+
+                        <h4 class="mb-4">My Recent Receipts</h4>
+
+                        <div class="table-responsive">
+
+                            <table class="table table-bordered table-hover align-middle">
+
+                                <thead style="background-color:#104439; color:white;">
+
+                                    <tr>
+                                        <th>Receipt No.</th>
+                                        <th>Month</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                    </tr>
+
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+                                        <td>RCPT-001</td>
+                                        <td>August 2026</td>
+                                        <td>৳5,000</td>
+                                        <td>
+                                            <span class="badge bg-success">
+                                                Paid
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>RCPT-002</td>
+                                        <td>July 2026</td>
+                                        <td>৳5,000</td>
+                                        <td>
+                                            <span class="badge bg-success">
+                                                Paid
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>RCPT-003</td>
+                                        <td>June 2026</td>
+                                        <td>৳5,000</td>
+                                        <td>
+                                            <span class="badge bg-success">
+                                                Paid
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
